@@ -2,7 +2,7 @@ import React from "react";
 import RewardButton from "../buttons/RewardButton";
 import { useNavigate } from "react-router-dom";
 
-export default function CampaignDesciption() {
+export default function CampaignDescription() {
     const navigate = useNavigate();
 
     const handleClaimClick = () => {

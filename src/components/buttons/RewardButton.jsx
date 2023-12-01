@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 export default function Button({ handleClick }) {
-    const [countDown, setcountDown] = useState(15);
+    const [countDown, setCountDown] = useState(15);
     const [buttonText, setButtonText] = useState("Reward in");
     const [buttonImage, setButtonImage] = useState("/img/camp_reward.png");
 
     useEffect(() => {
         if (countDown > 0) {
             const timer = setTimeout(() => {
-                setcountDown(countDown - 1);
+                setCountDown(countDown - 1);
             }, 1000);
             return () => clearTimeout(timer);
         } else {

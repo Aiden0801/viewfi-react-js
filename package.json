@@ -10,8 +10,9 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
     "react-scripts": "5.0.1",
-    "video.js": "^8.6.1",
-    "videojs-youtube": "^3.0.1",
+    "video.js": "7.6.6",
+    "videojs-vimeo-tech": "1.0.0",
+    "videojs-youtube": "2.6.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
