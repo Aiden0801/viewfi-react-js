@@ -9,7 +9,7 @@ export default function VideoContainer() {
         controls: true,
         sources: [
             {
-                src: "//vjs.zencdn.net/v/oceans.mp4",
+                src: "https://www.youtube.com/watch?v=pC-pFBM4fFc",
                 type: "video/mp4",
             },
         ],

@@ -1,6 +1,7 @@
 import React from "react";
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
+import "videojs-youtube";
 
 export const VideoPlayer = (props) => {
     const videoRef = React.useRef(null);
@@ -35,7 +36,7 @@ export const VideoPlayer = (props) => {
             player.autoplay(options.autoplay);
             player.src(options.sources);
         }
-    }, [options, videoRef]);
+    }, [options, videoRef, onReady]);
 
     // Dispose the Video.js player when the functional component unmounts
     React.useEffect(() => {

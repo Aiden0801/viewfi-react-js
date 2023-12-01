@@ -9365,7 +9365,7 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-"video.js@^7 || ^8", video.js@^8.6.1:
+"video.js@5.x || 6.x || 7.x || 8.x", "video.js@^7 || ^8", video.js@^8.6.1:
   version "8.6.1"
   resolved "https://registry.yarnpkg.com/video.js/-/video.js-8.6.1.tgz#d25f59fbf30fb21c0bcf04a1de6a98dfd137997c"
   integrity sha512-CNYVJ5WWIZ7bOhbkkfcKqLGoc6WsE3Ft2RfS1lXdQTWk8UiSsPW2Ssk2JzPCA8qnIlUG9os/faCFsYWjyu4JcA==
@@ -9403,6 +9403,13 @@ videojs-vtt.js@0.15.5:
   integrity sha512-yZbBxvA7QMYn15Lr/ZfhhLPrNpI/RmCSCqgIff57GC2gIrV5YfyzLfLyZMj0NnZSAz8syB4N0nHXpZg9MyrMOQ==
   dependencies:
     global "^4.3.1"
+
+videojs-youtube@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/videojs-youtube/-/videojs-youtube-3.0.1.tgz#f15eab72e15c6ac4796cf2111a25b789541af73a"
+  integrity sha512-0gKgag7Zno/dDwIdk+h48ODKDulR4IW62RxGE81PrMwi0OX/wUcKO6m1j+DFYI+7qjtWMZTKnbtQoHGxvUrFQg==
+  dependencies:
+    video.js "5.x || 6.x || 7.x || 8.x"
 
 w3c-hr-time@^1.0.2:
   version "1.0.2"

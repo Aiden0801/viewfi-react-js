@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function Button({ handleClick }) {
-    const [countDown, setcountDown] = useState(1);
+    const [countDown, setcountDown] = useState(15);
     const [buttonText, setButtonText] = useState("Reward in");
     const [buttonImage, setButtonImage] = useState("/img/camp_reward.png");
 
