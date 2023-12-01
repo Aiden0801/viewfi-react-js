@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const Signin = () => {
     const navigate = useNavigate();
     const handleClickSignin = () => {
-        navigate("signin/confirmed");
+        navigate("/signin/confirmed");
     };
     const handleClickEmail = () => {
         navigate("/signin/confirmed");
