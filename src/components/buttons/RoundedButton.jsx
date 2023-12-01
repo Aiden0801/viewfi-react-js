@@ -5,10 +5,10 @@ export default function Button({ handleClick, text, imageURL }) {
         <button
             onClick={handleClick}
             className={
-                "flex bg-[#FF2F80] justify-between items-center rounded-full"
+                "flex bg-primary justify-between items-center rounded-full"
             }
         >
-            <div className="text-white font-normal text-[33px] xl:text-[30px] md:text-[20px] sm:text-[14px] max-sm:text-[14px] px-[30px] py-[5px] xl:px-[27px] xl:py-[4.5px] md:px-[16px] md:py-[2.7px] sm:px-[12.5px] sm:py-[2px] max-sm:px-[12.5px] max-sm:py-[2px]">
+            <div className="text-white font-normal text-h0 xl:text-h1 md:text-h2 sm:text-h3 max-sm:text-h4 px-[30px] py-[5px] xl:px-[27px] xl:py-[4.5px] md:px-[16px] md:py-[2.7px] sm:px-[12.5px] sm:py-[2px] max-sm:px-[12.5px] max-sm:py-[2px]">
                 {text}
             </div>
             <div className="p-1">

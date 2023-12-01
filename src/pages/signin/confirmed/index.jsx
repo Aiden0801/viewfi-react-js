@@ -9,7 +9,7 @@ const SigninConfirmed = () => {
             <div className="absolute z-10 sm:top-[-151px] sm:left-[-90px] top-[-200px] left-[-100px] sm:w-[450px] sm:h-[420px] w-[130%] h-[550px] pl-4 flex py-2 -mb-10 md:py-4 gap-2 items-center rounded-full bg-[url('./assets/img/forest.png')] bg-cover"></div>
             <ModalHeader text={"Entry Confirmed"} />
             <div className="flex flex-col gap-1 ms-12 z-20 text-white left-[-30px]">
-                <div className="flex items-center gap-2 text-[35px]">
+                <div className="flex items-center gap-2 text-h0">
                     ONE
                     <svg
                         width="25"
@@ -24,8 +24,8 @@ const SigninConfirmed = () => {
                         />
                     </svg>
                 </div>
-                <div className="text-[35px]">MILLION</div>
-                <div className="text-[35px]">TREES</div>
+                <div className="text-h0">MILLION</div>
+                <div className="text-h0">TREES</div>
             </div>
             <div className="text-sm font-normal text-slate-900 z-20">
                 Success. You’ve been entered into the competition. The draw date

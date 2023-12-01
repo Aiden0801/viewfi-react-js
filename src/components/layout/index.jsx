@@ -2,8 +2,6 @@ import { Outlet, useLocation } from "react-router-dom";
 
 const Layout = () => {
     const location = useLocation();
-    console.log(location.pathname);
-
     const publicRoute = ["/dashboard"];
     return (
         <div className="bg-[url('./assets/img/campaign_container.png')] bg-cover w-full h-screen flex items-center flex-col-reverse">

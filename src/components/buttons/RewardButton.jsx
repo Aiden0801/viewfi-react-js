@@ -22,10 +22,10 @@ export default function Button({ handleClick }) {
             onClick={handleClick}
             disabled={countDown > 0}
             className={
-                "flex gap-2 bg-[#FF2F80] justify-between items-center rounded-[79px] text-white font-medium px-[5px] py-[4px]"
+                "flex gap-2 bg-primary justify-between items-center rounded-[79px] text-white font-medium px-[5px] py-[4px]"
             }
         >
-            <div className="md:text-[25px] text-[16px]">
+            <div className="md:text-h2 text-h3">
                 {" "}
                 {countDown > 0 ? `${buttonText} ${countDown}` : buttonText}{" "}
             </div>

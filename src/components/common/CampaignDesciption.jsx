@@ -17,11 +17,11 @@ export default function CampaignDesciption() {
                     alt="camp_desc_banner"
                 />
                 <div className="w-[1px] xl:h-[65px] md:h-[50px] h-[30px] bg-black/80"></div>
-                <div className="text-[#FF2F80]">
-                    <div className="md:text-[25px] text-[16px] font-semibold">
+                <div className="text-primary">
+                    <div className="md:text-h2 text-h3 font-semibold">
                         Nike Rewards
                     </div>
-                    <div className="md:text-[16px] text-[12px] font-medium">
+                    <div className="md:text-h3 text-h4 font-medium">
                         Claim your reward by clicking the claim now button
                     </div>
                 </div>

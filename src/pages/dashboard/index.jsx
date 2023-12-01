@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import PlayButton from "../../components/buttons/PlayButton";
+import RoundedButton from "../../components/buttons/RoundedButton";
 import CampaignContext from "../../components/common/CampaignContext";
 import VideoContainer from "../../container/VideoContainer";
 
@@ -13,7 +13,7 @@ const page = () => {
     return (
         <>
             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <PlayButton
+                <RoundedButton
                     handleClick={handleClip}
                     text={"Watch video to win"}
                     imageURL={"/img/btn_play.png"}

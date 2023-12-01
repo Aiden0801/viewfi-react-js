@@ -9,7 +9,7 @@ export default function ModalHeader({ text }) {
                     src="/img/modal_header_competition.png"
                     alt="claim_modal_header_competition"
                 />
-                <div className="text-white text-[20px] font-medium">{text}</div>
+                <div className="text-white text-h2 font-medium">{text}</div>
             </div>
             <div className="p-2">
                 <svg

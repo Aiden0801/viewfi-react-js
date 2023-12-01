@@ -12,10 +12,10 @@ export default function CampaignContext() {
                     />
                     <div className="bg-white/60 w-[1px] h-full z-30"></div>
                 </div>
-                <div className="absolute top-0 left-0 w-full h-[110%] bg-[#ff2f80] pl-4 flex py-2 -mb-10 md:py-4 gap-2 items-center rounded-br-full"></div>
+                <div className="absolute top-0 left-0 w-full h-[110%] bg-primary pl-4 flex py-2 -mb-10 md:py-4 gap-2 items-center rounded-br-full"></div>
             </div>
             <div className="flex justify-center items-center w-full">
-                <p className="text-[30px] xl:text-[27px] md:text-[16px] sm:text-[10px] max-sm:text-[10px] font-semibold ">
+                <p className="text-h1 xl:text-h2 md:text-h3 sm:text-h5 max-sm:text-h5 font-semibold ">
                     Get and gift an exclusive 1800 Digital flower collectible
                     NFT for watching this video
                 </p>
@@ -28,7 +28,7 @@ export default function CampaignContext() {
                         alt="camp_context_info"
                     />
                 </div>
-                <div className="absolute z-20 top-3 right-0 md:-right-6 bg-[#ff2f80] w-[70px] md:w-[120px] h-full rounded-tl-full flex pl-6 items-center mt-1 md:-mb-0 -mr-6"></div>
+                <div className="absolute z-20 top-3 right-0 md:-right-6 bg-primary w-[70px] md:w-[120px] h-full rounded-tl-full flex pl-6 items-center mt-1 md:-mb-0 -mr-6"></div>
             </div>
         </div>
     );
