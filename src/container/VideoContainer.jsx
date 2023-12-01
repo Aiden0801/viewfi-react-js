@@ -1,34 +1,71 @@
-import { useEffect, useRef } from "react";
 import CampaignDesciption from "../components/common/CampaignDesciption";
-export default function VideoContainer({ isPlaying, handleCampaignShow }) {
-    const videoRef = useRef(null);
+import VideoPlayer from "./VideoPlayer";
 
-    useEffect(() => {
-        if (isPlaying && videoRef.current) {
-            videoRef.current.play();
-        }
-    }, [isPlaying, videoRef]);
+export default function VideoContainer() {
+    const videoJsOptions = {
+        autoplay: true,
+        playbackRates: [0.5, 1, 1.25, 1.5, 2],
+        responsive: true,
+        controls: true,
+        sources: [
+            {
+                src: "//vjs.zencdn.net/v/oceans.mp4",
+                type: "video/mp4",
+            },
+        ],
+    };
 
     return (
         <div>
-            {isPlaying && (
-                <div className="absolute top-[12px] z-20 w-full left-0 p-2 ">
-                    <CampaignDesciption />
-                </div>
-            )}
-
-            <video
-                ref={videoRef}
-                src={
-                    "https://stream.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/low.mp4"
-                }
-                className={`${
-                    isPlaying
-                        ? "absolute top-0 left-0 w-full h-full object-cover z-10 "
-                        : "hidden"
-                }`}
-                controls={isPlaying}
-            />
+            <div className="absolute top-[12px] z-20 w-full left-0 p-2">
+                <CampaignDesciption />
+            </div>
+            <div className="w-screen h-screen">
+                <VideoPlayer options={videoJsOptions} />
+            </div>
         </div>
     );
 }
+
+/**
+ * import React from 'react';
+
+// This imports the functional component from the previous sample.
+import VideoJS from './VideoJS'
+
+const App = () => {
+  const playerRef = React.useRef(null);
+
+  const videoJsOptions = {
+    autoplay: true,
+    controls: true,
+    responsive: true,
+    fluid: true,
+    sources: [{
+      src: '/path/to/video.mp4',
+      type: 'video/mp4'
+    }]
+  };
+
+  const handlePlayerReady = (player) => {
+    playerRef.current = player;
+
+    // You can handle player events here, for example:
+    player.on('waiting', () => {
+      videojs.log('player is waiting');
+    });
+
+    player.on('dispose', () => {
+      videojs.log('player will dispose');
+    });
+  };
+
+  return (
+    <>
+      <div>Rest of app here</div>
+      <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
+      <div>Rest of app here</div>
+    </>
+  );
+}
+ */
