@@ -2,22 +2,24 @@ import "./App.css";
 import CampaignContainer from "./container/CampaignContainer";
 import { CampaignContextProvider } from "./context/CampaignContextProvider";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./pages/config";
 // container
 
 function App() {
     return (
         <div className="App">
             <CampaignContextProvider>
-                <Router>
+                {/* <Router>
                     <Routes>
                         <Route
                             path="/campaigns"
                             element={<CampaignContainer />}
                         />
-                        {/* Add more Routes as needed */}
+
                     </Routes>
-                </Router>
+                </Router> */}
+                <RouterProvider router={router} />
             </CampaignContextProvider>
         </div>
     );

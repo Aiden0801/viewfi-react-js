@@ -1,17 +1,15 @@
 import React from "react";
 
-export default function ClaimModalHeader() {
+export default function ModalHeader({ text }) {
     return (
         <div className="flex justify-between w-full z-20 border rounded-[15px] p-1">
             <div className="flex items-center gap-2 ">
                 <img
                     className=""
-                    src="./img/modal_header_competition.png"
+                    src="/img/modal_header_competition.png"
                     alt="claim_modal_header_competition"
                 />
-                <div className="text-white text-[20px] font-medium">
-                    Nike Rewards
-                </div>
+                <div className="text-white text-[20px] font-medium">{text}</div>
             </div>
             <div className="p-2">
                 <svg

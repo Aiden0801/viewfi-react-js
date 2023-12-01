@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 export default function Button({ handleClick }) {
     const [countDown, setcountDown] = useState(1);
     const [buttonText, setButtonText] = useState("Reward in");
-    const [buttonImage, setButtonImage] = useState("./img/camp_reward.png");
+    const [buttonImage, setButtonImage] = useState("/img/camp_reward.png");
 
     useEffect(() => {
         if (countDown > 0) {
@@ -13,7 +13,7 @@ export default function Button({ handleClick }) {
             return () => clearTimeout(timer);
         } else {
             setButtonText("Claim now");
-            setButtonImage("./img/camp_claim.png");
+            setButtonImage("/img/camp_claim.png");
         }
     }, [countDown]);
 
