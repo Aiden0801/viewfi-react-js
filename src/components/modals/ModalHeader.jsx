@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ModalHeader({ text }) {
     return (
-        <div className="flex justify-between w-full z-20 border rounded-[15px] p-1">
+        <div className="flex justify-between z-20 border w-full rounded-[15px] p-1">
             <div className="flex items-center gap-2 ">
                 <img
                     className=""

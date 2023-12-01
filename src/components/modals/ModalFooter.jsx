@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ModalFooter = () => {
     return (
-        <div className="flex items-center w-full justify-between p-4 border-t border-[#d7d7d7] mt-6">
+        <div className="flex items-center w-full justify-between p-4 border-t border-clightdark mt-6">
             <div className="text-h5 font-normal text-cdark">
                 <Link className="underline" to={"/dashboard"}>
                     Privacy Policy

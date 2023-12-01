@@ -6,28 +6,29 @@ import LearnMoreButton from "../../../components/buttons/LearnMoreButton";
 const SigninConfirmed = () => {
     return (
         <>
-            <div className="absolute z-10 sm:top-[-151px] sm:left-[-90px] top-[-200px] left-[-100px] sm:w-[450px] sm:h-[420px] w-[130%] h-[550px] pl-4 flex py-2 -mb-10 md:py-4 gap-2 items-center rounded-full bg-[url('./assets/img/forest.png')] bg-cover"></div>
-            <ModalHeader text={"Entry Confirmed"} />
-            <div className="flex flex-col gap-1 ms-12 z-20 text-white left-[-30px]">
-                <div className="flex items-center gap-2 text-h0">
-                    ONE
-                    <svg
-                        width="25"
-                        height="29"
-                        viewBox="0 0 25 29"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M24.1538 25.3467L19.4128 18.2471H22.0608L17.295 11.1077H19.9164L12.5 0L5.08274 11.1077H7.70413L2.93838 18.2471H5.58633L0.846191 25.3467H11.5867V29H12.0434H12.9567H13.4134V25.3467H24.1538ZM7.97141 16.9887H5.32437L10.0893 9.85105H7.46788L12.5 2.31519L17.5313 9.85105H14.909L19.6756 16.9887H17.0277L21.7687 24.0891H12.9567V21.9712L16.5277 17.8914L15.84 17.2896L12.9567 20.5854V17.2206L15.8365 13.9292L15.1489 13.3283L12.9567 15.8338V9.71211H12.0434V15.8329L9.8512 13.3283L9.16353 13.9292L12.0434 17.2205V20.5844L9.16002 17.2896L8.47325 17.8914L12.0434 21.9712V24.0891H3.23127L7.97141 16.9887Z"
-                            fill="white"
-                        />
-                    </svg>
+            <div className="-m-6 z-10 p-4 flex flex-col h-[293px] py-2 -mb-10 md:py-4 gap-2 bg-[url('./assets/img/forest.png')] bg-cover">
+                <ModalHeader text={"Entry Confirmed"} />
+                <div className="flex flex-col ms-12 gap- z-20 text-white">
+                    <div className="flex items-center gap-2 text-h0">
+                        ONE
+                        <svg
+                            width="25"
+                            height="29"
+                            viewBox="0 0 25 29"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M24.1538 25.3467L19.4128 18.2471H22.0608L17.295 11.1077H19.9164L12.5 0L5.08274 11.1077H7.70413L2.93838 18.2471H5.58633L0.846191 25.3467H11.5867V29H12.0434H12.9567H13.4134V25.3467H24.1538ZM7.97141 16.9887H5.32437L10.0893 9.85105H7.46788L12.5 2.31519L17.5313 9.85105H14.909L19.6756 16.9887H17.0277L21.7687 24.0891H12.9567V21.9712L16.5277 17.8914L15.84 17.2896L12.9567 20.5854V17.2206L15.8365 13.9292L15.1489 13.3283L12.9567 15.8338V9.71211H12.0434V15.8329L9.8512 13.3283L9.16353 13.9292L12.0434 17.2205V20.5844L9.16002 17.2896L8.47325 17.8914L12.0434 21.9712V24.0891H3.23127L7.97141 16.9887Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </div>
+                    <div className="text-h0">MILLION</div>
+                    <div className="text-h0">TREES</div>
                 </div>
-                <div className="text-h0">MILLION</div>
-                <div className="text-h0">TREES</div>
             </div>
-            <div className="text-sm font-normal text-slate-900 z-20">
+            <div className="text-sm font-normal text-slate-900 z-20 mt-8">
                 Success. You’ve been entered into the competition. The draw date
                 is on 16 October 2023. Good luck!
             </div>

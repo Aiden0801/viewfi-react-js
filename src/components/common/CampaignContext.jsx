@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CampaignContext() {
     return (
-        <div className="flex justify-between gap-4  w-[1336px] xl:w-[1200px] md:w-[721.5px] sm:w-full max-sm:w-full h-[159px] xl:h-[143px] md:h-[86px] sm:h-[50px] max-sm:h-[50px] overflow-hidden z-30 bg-white border border-[#c5c5c5] md:rounded-[31px] md:mb-[40px]">
+        <div className="flex justify-between gap-4  w-[1336px] xl:w-[1200px] md:w-[721.5px] sm:w-full max-sm:w-full h-[159px] xl:h-[143px] md:h-[86px] sm:h-[50px] max-sm:h-[50px] overflow-hidden z-30 bg-white border border-clightdark md:rounded-[31px] md:mb-[40px]">
             <div className="relative w-[100px] md:w-[200px] overflow-hidden h-full">
                 <div className="flex justify-start pl-2 md:pl-3 gap-1 sm:gap-2 md:gap-3 py-4 items-center top-0 left-0 w-full h-full z-30 ">
                     <img

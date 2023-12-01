@@ -4,6 +4,7 @@ import Claim from "./claim";
 import Signin from "./signin";
 import Dashboard from "./dashboard";
 import SigninConfirmed from "./signin/confirmed";
+import ConnectWallet from "./connectwallet";
 
 export const router = createBrowserRouter([
     {
@@ -26,7 +27,10 @@ export const router = createBrowserRouter([
                 path: "dashboard",
                 element: <Dashboard />,
             },
-
+            {
+                path: "connectwallet",
+                element: <ConnectWallet />,
+            },
             {
                 path: "/",
                 element: <Navigate to={`/dashboard`} />,

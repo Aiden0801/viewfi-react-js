@@ -9,7 +9,7 @@ export default function CampaignDesciption() {
         navigate("/claim");
     };
     return (
-        <div className="flex items-center justify-between rounded-[20px] border-[0.65px] border-[#C5C5C5] p-2">
+        <div className="flex items-center justify-between rounded-[20px] border-[0.65px] border-clightdark p-2">
             <div className="flex items-center gap-4 h-full">
                 <img
                     className="xl:w-[88px] md:w-[65px] w-[40px]"
